@@ -3,7 +3,7 @@ import httpx
 
 app = FastAPI(title="Currency Converter API", version="1.0.0")
 
-# Новый URL для API
+#URL для API с курсом валют
 EXCHANGE_RATE_API = "https://open.er-api.com/v6/latest"
 
 @app.get("/api/v1/rates", summary="Конвертация валюты", description="Конвертирует валюту, используя актуальные курсы обмена.")
